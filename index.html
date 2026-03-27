@@ -1,13 +1,236 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>quiz</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensée Critique & Audace | L'Expérience</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <!-- Background Animation Canvas -->
+    <canvas id="shader-bg"></canvas>
+
+    <header id="navbar">
+        <div class="nav-container">
+            <div class="logo">P&A<span class="dot">.</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#pensee">Pensée Critique</a></li>
+                    <li><a href="#audace">Audace</a></li>
+                    <li><a href="#video">Vidéo</a></li>
+                    <li><a href="#avantages">Avantages</a></li>
+                    <li><a href="#quiz-app">Le Quiz</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                </ul>
+            </nav>
+            <div class="nav-cta">
+                <a href="#quiz-anchor" class="btn-small">Faire le Quiz</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="full-height reveal">
+            <div class="hero-content">
+                <h1 class="glitch-text">L'ESPRIT CRITIQUE <br>& L'AUDACE</h1>
+                <p class="tagline">Apprendre à réfléchir par soi-même pour mieux agir dans le monde. Une présentation complète sur les compétences essentielles du 21ème siècle pour les étudiants et futurs professionnels.</p>
+                <div class="hero-btns">
+                    <a href="#pensee" class="btn-primary">Découvrir le cours</a>
+                    <a href="#conclusion" class="btn-secondary">Voir les conseils</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Pensée Critique -->
+        <section id="pensee" class="reveal">
+            <div class="container">
+                <div class="section-badge">Partie 01</div>
+                <h2 class="title-main">La Pensée Critique</h2>
+                <div class="definition-card glass">
+                    <p class="def-text">La pensée critique est la capacité de réfléchir de manière claire et rationnelle. Elle permet de comprendre le lien logique entre les idées. C'est un outil indispensable pour ne pas se laisser tromper par les fausses informations (Fake News) et pour prendre les meilleures décisions possibles dans sa vie personnelle et professionnelle. Elle consiste à ne pas accepter une idée sans avoir vérifié les preuves qui la soutiennent.</p>
+                </div>
+                <div class="pillars-grid">
+                    <div class="pillar glass">
+                        <div class="pillar-num">01</div>
+                        <h3>L'Analyse des Sources</h3>
+                        <p>Il est très important de savoir d'où vient l'information. Est-ce un site sérieux ? Qui a écrit l'article ? Quel est son but ? En analysant la source, on évite de croire des mensonges ou des opinions qui se font passer pour des vérités.</p>
+                    </div>
+                    <div class="pillar glass">
+                        <div class="pillar-num">02</div>
+                        <h3>Le Raisonnement Logique</h3>
+                        <p>Réfléchir logiquement veut dire chercher des preuves concrètes. On doit se poser des questions : Pourquoi est-ce vrai ? Est-ce qu'il y a des contradictions ? La logique nous aide à construire des arguments solides et à convaincre les autres avec des faits.</p>
+                    </div>
+                    <div class="pillar glass">
+                        <div class="pillar-num">03</div>
+                        <h3>L'Ouverture d'Esprit</h3>
+                        <p>Avoir un esprit critique, c'est aussi être capable d'écouter les autres, même si on n'est pas d'accord. Il faut accepter que l'on peut se tromper. Si quelqu'un apporte une preuve meilleure, on doit être prêt à changer d'avis pour progresser.</p>
+                    </div>
+                </div>
+                <div class="real-example glass">
+                    <span class="ex-tag">Exemple concret pour les étudiants</span>
+                    <p>Imaginons que vous lisiez sur les réseaux sociaux qu'un examen est annulé. Au lieu de fêter ça tout de suite, l'étudiant critique va sur le site officiel de l'école ou demande directement à son professeur pour confirmer l'information avant de s'arrêter de réviser.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Audace -->
+        <section id="audace" class="reveal">
+            <div class="container">
+                <div class="section-badge">Partie 02</div>
+                <h2 class="title-main">L'Audace</h2>
+                <div class="definition-card glass">
+                    <p class="def-text">L'audace est le courage de faire des choses qui nous font un peu peur ou qui sortent de nos habitudes. C'est l'énergie qui nous pousse à passer à l'action. Sans audace, toutes nos bonnes idées restent dans notre tête et ne changent jamais rien. L'audace permet de dépasser ses limites et d'oser entreprendre des projets ambitieux, même quand le résultat n'est pas garanti d'avance.</p>
+                </div>
+                <div class="pillars-grid">
+                    <div class="pillar glass">
+                        <div class="pillar-num">01</div>
+                        <h3>La Prise d'Initiative</h3>
+                        <p>Prendre l'initiative, c'est commencer quelque chose sans attendre que quelqu'un nous le dise. C'est être actif et non passif. Un étudiant audacieux propose des solutions nouvelles pour un projet de groupe au lieu de simplement suivre le mouvement.</p>
+                    </div>
+                    <div class="pillar glass">
+                        <div class="pillar-num">02</div>
+                        <h3>La Gestion de l'Échec</h3>
+                        <p>L'audace demande d'accepter que l'on peut rater. L'échec n'est pas une fin, c'est une leçon. Les plus grands inventeurs ont échoué plusieurs fois avant de réussir. Il faut voir chaque erreur comme une chance de s'améliorer et de devenir plus fort.</p>
+                    </div>
+                    <div class="pillar glass">
+                        <div class="pillar-num">03</div>
+                        <h3>La Confiance en Soi</h3>
+                        <p>Pour être audacieux, il faut croire en ses capacités. Cela se travaille chaque jour en faisant de petites actions courageuses. Plus on ose, plus notre confiance grandit, et plus on est prêt à relever de grands défis dans le futur.</p>
+                    </div>
+                </div>
+                <div class="real-example glass">
+                    <span class="ex-tag">Exemple concret pour les étudiants</span>
+                    <p>Un étudiant remarque qu'une association de son école manque de membres. Il décide alors de créer un événement original pour attirer du monde, même s'il a peur que personne ne vienne. C'est cette action courageuse qui va faire vivre l'association.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="reveal">
+            <div class="container">
+                <h2 class="title-secondary center">Pourquoi c'est important ?</h2>
+                <div class="stats-grid">
+                    <div class="stat-card glass">
+                        <div class="stat-value" data-target="85">0%</div>
+                        <p class="stat-label">Des chefs d'entreprise disent que l'esprit critique est la compétence n°1 qu'ils recherchent chez les nouveaux diplômés.</p>
+                    </div>
+                    <div class="stat-card glass chart-card">
+                        <div class="chart-container">
+                            <div class="bar-item">
+                                <div class="bar" style="--h: 30%; transition-delay: 0.1s;"></div>
+                                <span class="year">2015</span>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar" style="--h: 60%; transition-delay: 0.3s;"></div>
+                                <span class="year">2020</span>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar" style="--h: 95%; transition-delay: 0.5s;"></div>
+                                <span class="year">2025</span>
+                            </div>
+                        </div>
+                        <p class="stat-label">Évolution de la demande mondiale pour les soft skills. La courbe montre une croissance rapide et constante.</p>
+                    </div>
+                    <div class="stat-card glass">
+                        <div class="stat-value">Top 5</div>
+                        <p class="stat-label">L'Audace et la Résolution de problèmes sont classées dans le Top 5 des priorités mondiales pour les années à venir.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Vidéo d'Illustration -->
+        <section id="video" class="reveal">
+            <div class="container center">
+                <div class="section-badge">Exemple en vidéo</div>
+                <h2 class="title-secondary">L'Intelligence face aux obstacles</h2>
+                <div class="video-wrapper glass">
+                    <video controls class="main-video">
+                        <source src="dist/Raven Uses Stick to Reach Food __ ViralHog.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la vidéo.
+                    </video>
+                </div>
+                <p class="video-caption">Regardez comment ce corbeau utilise son intelligence pour fabriquer un outil. C'est une parfaite illustration de la pensée critique : analyser un problème et trouver une solution audacieuse pour réussir.</p>
+            </div>
+        </section>
+
+        <!-- 5. Avantages -->
+        <section id="avantages" class="reveal">
+            <div class="container">
+                <div class="section-badge">Conclusion de l'analyse</div>
+                <h2 class="title-main">Les Avantages concrets</h2>
+                <div class="pillars-grid">
+                    <div class="pillar glass">
+                        <div class="pillar-num">⚡</div>
+                        <h3>Réussite Professionnelle</h3>
+                        <p>Dans le monde du travail, ceux qui réfléchissent et qui proposent des choses avancent plus vite. Vous devenez un élément moteur pour votre entreprise et vos collègues vous font confiance pour votre jugement.</p>
+                    </div>
+                    <div class="pillar glass">
+                        <div class="pillar-num">🎯</div>
+                        <h3>Meilleures Décisions</h3>
+                        <p>Que ce soit pour choisir vos études, votre futur métier ou vos projets personnels, l'esprit critique vous évite de faire des erreurs basées sur des émotions ou des fausses impressions. Vous agissez avec certitude.</p>
+                    </div>
+                    <div class="pillar glass">
+                        <div class="pillar-num">📈</div>
+                        <h3>Une Vie Plus Riche</h3>
+                        <p>En étant audacieux, vous vivez plus de choses. Chaque nouveau défi est une aventure qui vous rend plus fort, plus expérimenté et plus fier de vous-même. C'est le secret d'une vie intéressante et pleine de succès.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Quiz Interactive -->
+        <section id="quiz-anchor" class="reveal">
+             <div class="container">
+                <div class="quiz-container glass" id="quiz-app">
+                    <div id="quiz-start">
+                        <h2>Êtes-vous prêt pour le test ?</h2>
+                        <p>Ce petit quiz interactif va vous aider à situer votre niveau actuel en pensée critique et en audace. Répondez honnêtement aux 10 questions pour obtenir votre analyse personnalisée.</p>
+                        <button class="btn-large" onclick="app.startQuiz()">Démarrer le Quiz maintenant</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion & Remerciements -->
+        <section id="conclusion" class="reveal">
+            <div class="container glass conclusion-card">
+                <div class="conclusion-header">
+                    <h2 class="title-secondary">Conclusion & Remerciements</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="conclusion-advice">
+                    <p>La pensée critique n'est pas une fin en soi, c'est l'outil qui vous permet d'oser avec discernement. Ne craignez pas l'erreur, car elle est la matière première de votre apprentissage. Lisez au-delà des titres, assumez vos décisions et n'attendez pas d'être "parfait" pour apporter votre pierre à l'édifice.</p>
+                </div>
+
+                <div class="conclusion-content">
+                    <div class="team-info">
+                        <h3>Présenté par :</h3>
+                        <p class="name">Abderrahmane Laourf</p>
+                        <p class="name">Anwar Bentaher</p>
+                    </div>
+                    <div class="supervisor-info">
+                        <h3>Encadré par :</h3>
+                        <p class="name mentor">Mme Bouradi</p>
+                    </div>
+                </div>
+                <div class="footer-note">
+                    <p>Projet réalisé dans le cadre de l'exploration des Soft Skills et du développement Web moderne.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <p>&copy; 2026 P&A Project. Tous droits réservés.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
 </html>
